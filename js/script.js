@@ -25,9 +25,22 @@ function handleCLikBtn(target) {
     // Enable Make Purchase Button
     const makePurchase = document.getElementById("purchase");
     if(inDecimalTotalPrice > 0){
-        makePurchase.disabled = false ;
+        makePurchase.removeAttribute('disabled');
     }else{
-        makePurchase.disabled = true ; 
+        makePurchase.removeAttribute('disabled',true);
     }
+
+    //Enable Apply Button
+    const inputField = document.getElementById("text-delete");
+    const btnField = document.getElementById("btn-delete");
+
+    inputField.addEventListener('keyup',function(){
+        if (inDecimalTotalPrice > 200 && inputField.value === "SELL200") {
+            btnField.removeAttribute('disabled');
+          } else {
+            btnField.removeAttribute('disabled',true);
+          }
+    });
+
 
 }

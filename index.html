@@ -50,7 +50,7 @@
             <div class="flex justify-between items-center gap-10 flex-col lg:flex-row">
                 <div class="flex-1">
                     <h1 class="text-4xl font-semibold py-10">Kitchenware</h1>
-                    <div class="flex flex-col md:flex-col lg:flex-row gap-5">
+                    <div class="flex flex-col md:flex-row lg:flex-row gap-5">
 
                         <div onclick="handleCLikBtn(this)" class="card w-full mx-auto bg-base-100 shadow-xl">
                             <figure class="px-5 py-5 bg-[#1111110d] m-4 rounded-lg h-1/2">
@@ -107,7 +107,7 @@
 
 
                     <h1 class="text-4xl font-semibold py-10">Sportswear</h1>
-                    <div class="flex flex-col md:flex-col lg:flex-row gap-5">
+                    <div class="flex flex-col md:flex-row lg:flex-row gap-5">
 
                         <div onclick="handleCLikBtn(this)" class="card w-full mx-auto bg-base-100 shadow-xl">
                             <figure class="px-5 py-5 bg-[#1111110d] m-4 rounded-lg h-1/2">
@@ -178,9 +178,9 @@
                         <ol class="selected-items list-decimal" id="selected-items"></ol>
                         <hr />
                         <h6 class="text-xl font-medium">Total Price: <span id="total-price">00</span> TK</h6>
-                        <h6 class="text-xl font-medium">Discount:<span> 00 </span> TK</h6>
+                        <h6 class="text-xl font-medium">Discount:<span id="discount-price"> 00 </span> TK</h6>
 
-                        <h5 class="text-xl font-medium">Total: <span>00</span> TK</h5>
+                        <h5 class="text-xl font-medium">Total: <span id="new-price">00</span> TK</h5>
                         <hr>
 
                         <button class="btn btn-secondary w-full text-white my-5">Make Purchase</button>

@@ -23,24 +23,24 @@ function handleCLikBtn(target) {
     //Enable Apply Button
     const inputField = document.getElementById("text-delete");
     const btnField = document.getElementById("btn-delete");
-    
+
     if (inDecimalTotalPrice >= 200) {
-      btnField.removeAttribute('disabled');
+        btnField.removeAttribute('disabled');
     }
-    
-    btnField.addEventListener("click", function() {
-      if (inputField.value === "SELL200") {
 
-        // Discount Amount
-        const discount = inDecimalTotalPrice * 0.2;
-        const inDecimalDiscount = discount.toFixed(2);
-        document.getElementById("discount-price").innerText = inDecimalDiscount;
+    btnField.addEventListener("click", function () {
+        if (inputField.value === "SELL200") {
 
-        // New Amount
-        const newTotalPrice = inDecimalTotalPrice - discount;
-        const inDecimalNewTotal = newTotalPrice.toFixed(2);
-        document.getElementById("new-price").innerText = inDecimalNewTotal;
-      }
+            // Discount Amount
+            const discount = inDecimalTotalPrice * 0.2;
+            const inDecimalDiscount = discount.toFixed(2);
+            document.getElementById("discount-price").innerText = inDecimalDiscount;
+
+            // New Amount
+            const newTotalPrice = inDecimalTotalPrice - discount;
+            const inDecimalNewTotal = newTotalPrice.toFixed(2);
+            document.getElementById("new-price").innerText = inDecimalNewTotal;
+        }
     });
 
 
